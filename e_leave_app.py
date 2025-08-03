@@ -286,7 +286,7 @@ if logged_in_role == "manager":
                                     st.session_state.audit_trail = pd.concat([st.session_state.audit_trail, pd.DataFrame([audit_log])], ignore_index=True)
                                     st.session_state.audit_trail.to_csv(AUDIT_FILE, index=False)
                                     st.error(f"Leave rejected for {row['Employee']}.")
-                                    st.experimental_rerun()
+                                    st.rerun()
 
 # ---------------- DASHBOARD TAB ----------------
 with tab3:
