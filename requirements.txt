@@ -3,4 +3,4 @@ pandas==2.2.2
 plotly
 openpyxl
 yagmail==0.15.293
-Pillow
+Pillow==10.1.0
